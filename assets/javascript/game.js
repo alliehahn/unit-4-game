@@ -12,63 +12,34 @@ $(document).ready(function() {
     init();
 });
 
-$("#one").click(function() {
-    sum += numberOne;
+$(".container").click(function() {
     $("#sum").text(sum);
     if (sum== goalNumber) {
-        $("#status").text("You won!")
+        $("#status").text("You Won!")
         wins++;
         reset()
     };
     if (sum > goalNumber) {
         losses++;
         reset()
-        $("#status").text("You Lost!")
-    }    
+        $("#status").text("You Lose!")
+    }
+});
+
+$("#one").click(function() {
+    sum += numberOne;
 });
 
 $("#two").click(function() {
     sum += numberTwo;
-    $("#sum").text(sum);
-    if (sum== goalNumber) {
-        $("#status").text("You won!")
-        wins++;
-        reset()}
-    if (sum > goalNumber) {
-        losses++;
-        reset()
-        $("#status").text("You Lost!")
-    }    
 });
 
 $("#three").click(function() {
     sum += numberThree;
-    $("#sum").text(sum);
-    if (sum== goalNumber) {
-        $("#status").text("You won!")
-        wins++;
-        reset()
-    };
-    if (sum > goalNumber) {
-        losses++;
-        reset()
-        $("#status").text("You Lost!")
-    }
 });
 
 $("#four").click(function() {
     sum += numberFour;
-    $("#sum").text(sum);
-    if (sum== goalNumber) {
-        $("#status").text("You won!")
-        wins++;
-        reset()
-    };
-    if (sum > goalNumber) {
-       losses++;
-       reset()
-       $("#status").text("You Lost!")
-    }
 });
 
 
