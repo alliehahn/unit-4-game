@@ -23,7 +23,7 @@ $("#one").click(function() {
     if (sum > goalNumber) {
         losses++;
         reset()
-        $("#status").text("You Loss!")
+        $("#status").text("You Lost!")
     }    
 });
 
@@ -37,7 +37,7 @@ $("#two").click(function() {
     if (sum > goalNumber) {
         losses++;
         reset()
-        $("#status").text("You Loss!")
+        $("#status").text("You Lost!")
     }    
 });
 
@@ -52,7 +52,7 @@ $("#three").click(function() {
     if (sum > goalNumber) {
         losses++;
         reset()
-        $("#status").text("You Loss!")
+        $("#status").text("You Lost!")
     }
 });
 
@@ -67,7 +67,7 @@ $("#four").click(function() {
     if (sum > goalNumber) {
        losses++;
        reset()
-       $("#status").text("You Loss!")
+       $("#status").text("You Lost!")
     }
 });
 
