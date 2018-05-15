@@ -16,12 +16,14 @@ $("#one").click(function() {
     sum += numberOne;
     $("#sum").text(sum);
     if (sum== goalNumber) {
+        $("#status").text("You won!")
         wins++;
         reset()
     };
     if (sum > goalNumber) {
         losses++;
         reset()
+        $("#status").text("You Loss!")
     }    
 });
 
@@ -29,11 +31,13 @@ $("#two").click(function() {
     sum += numberTwo;
     $("#sum").text(sum);
     if (sum== goalNumber) {
+        $("#status").text("You won!")
         wins++;
         reset()}
     if (sum > goalNumber) {
         losses++;
         reset()
+        $("#status").text("You Loss!")
     }    
 });
 
@@ -41,12 +45,14 @@ $("#three").click(function() {
     sum += numberThree;
     $("#sum").text(sum);
     if (sum== goalNumber) {
+        $("#status").text("You won!")
         wins++;
         reset()
     };
     if (sum > goalNumber) {
         losses++;
         reset()
+        $("#status").text("You Loss!")
     }
 });
 
@@ -54,12 +60,14 @@ $("#four").click(function() {
     sum += numberFour;
     $("#sum").text(sum);
     if (sum== goalNumber) {
+        $("#status").text("You won!")
         wins++;
         reset()
     };
     if (sum > goalNumber) {
        losses++;
        reset()
+       $("#status").text("You Loss!")
     }
 });
 
@@ -74,7 +82,7 @@ function reset() {
 }
 
 function init() {
-    goalNumber= Math.floor(Math.random() * 121) + 19;
+    goalNumber= Math.floor(Math.random() * 101) + 19;
     $("#randomNumber").text(goalNumber);
     numberOne= randomVal();
     numberTwo= randomVal();
@@ -87,7 +95,7 @@ function init() {
     }
 
     function randomVal () {
-        return Math.floor(Math.random() * 13) + 1;
+        return Math.floor(Math.random() * 11) + 1;
     }
      
 
